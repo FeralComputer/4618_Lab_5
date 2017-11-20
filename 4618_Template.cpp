@@ -12,6 +12,7 @@
 #include "Client.h"
 #include "Server.h"
 #include "Serial.h" // Must include Windows.h after Winsock2.h, so Serial must include after Client/Server
+#include "Pong.h"
 
 // OpenCV Include
 #include "opencv.hpp"
@@ -199,5 +200,7 @@ int main(int argc, char* argv[])
 	//test_com();
 	//do_image();
 	//do_video ();
-  clientserver();
+  //clientserver();
+	CPong pong;
+	pong.run();
 }

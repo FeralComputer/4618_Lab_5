@@ -5,8 +5,11 @@
 
 #include <string>
 
+#ifdef _WIN32
 #include "opencv.hpp"
-
+#elif linux
+#include <opencv2/opencv.hpp>
+#endif
 #include "Winsock2.h"
 
 #define BUFF_SIZE 65535
